@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../Img/logo-_f_.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/estilos-contacto.css">
+    <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
+    <title>Daff-Contacto</title>
+</head>
+<header class="header">
+        
+    <!-- logo -->
+    <div class="logo">
+        
+        <a href="../../index.html"><img src="../Img/DAFFLogo.png" alt="" width="50" height="50"></a>             
+            
+    </div>
+
+    <!-- Slogan -->
+    <h1 class="Slogan">DAFF, Tu centro de Moda</h1>
+                    
+    <!-- Menu      -->
+    <div id="dropdown">
+            
+        <ul class="dropdown-menu">
+            <li><i class="fa fa-bars fa-2x fa-lg" style="color:#FFFFFF;"></i>
+                <ul>
+                    <li><a href="../../index.html">Inicio</a></li>
+                    <li><a href="../../Static/templates/register.html">Registrarse</a></li>
+                    <li><a href="../../Static/templates/Contacto.html">Contacto</a></li>
+                </ul>
+            </li>
+        </ul>    
+    </div>     
+</header>  
+
+<body>
+    <div class="container-form">
+        <div class="info-form">
+            <h2><span>Contáctanos</span></h2>
+            <p><span>Dejanos tus datos y mensaje y responderemos a la brevedad</span></p>
+            <a href="#"><i class="fa fa-phone"></i> 123-456-789</a>
+            <a href="#"><i class="fa fa-envelope"></i> info@daff.com.ar</a>
+            <a href="#"><i class="fa fa-map-marked"></i> Buenos Aires, Argentina</a>
+        </div>
+     <!--   <form action="#" autocomplete="off"> -->
+        <form action="#" id="formContact" method="GET" novalidate>
+            <input type="text" name="nombre" placeholder="Tu Nombre" id="firstname" class="campo">
+            <div class="error" id="error-firstname"></div>
+            <input type="email" name="email" placeholder="Tu Email" id="email" class="campo">
+            <div class="error" id="error-email"></div>
+            <input type="telefono" name="teléfono" placeholder="Tu Teléfono" id="phone" class="campo">
+            <div class="error" id="error-phone"></div>
+            <textarea name="mensaje" placeholder="Tu Mensaje..." id="message"></textarea>
+            <div class="error" id="error-message"></div>
+   <!--         <input type="submit" name="enviar" value="Enviar Mensaje" id="btn-send"> --> 
+            <button type="button" name="enviar" id="btn-send1">Enviar Mensaje</button>
+        </form>
+    </div>
+
+    <p>Horarios de Atención: Lunes a Viernes 8 a 16hs - Sábados 8 a 13hs</p>
+    <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.205371887223!2d-58.43589342481348!3d-34.59896795724636!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca716c1813d3%3A0xe5bfd462dfd6e80f!2sJuli%C3%A1n%20%C3%81lvarez%20675%2C%20C1414DRM%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1713808356776!5m2!1ses-419!2sar"
+        width="500" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <footer id="footer">
+            <ul>
+                <li class="Opciones-footer"><a href="">Términos y condiciones</a></li>
+                <li class="Opciones-footer"><a href="">Preguntas frecuentes</a></li>
+                <li class="Opciones-footer"><a href="">Ayuda</a></li>
+            </ul>
+       </footer>
+       <script src="../../Static/js/validation-contact.js"></script>
+</body>
+
+</html>

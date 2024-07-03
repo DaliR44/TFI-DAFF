@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Carga</title>
+    <link rel="stylesheet" href="../css/inventario.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@10.16.6/dist/sweetalert2.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10.16.6/dist/sweetalert2.all.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+</head>
+<body>
+
+    <header class="header">
+
+        <!-- logo -->
+        <div class="logo">
+    
+            <a href="../../index.html"><img src="../Img/DAFFLogo.png" alt="" width="50px" height="50px"></a>
+    
+        </div>
+    
+        <!-- Slogan -->
+        <h1 class="Slogan">DAFF, Tu centro de Moda</h1>
+    
+        <!-- Menu      -->
+        <div id="dropdown">
+    
+            <ul class="dropdown-menu">
+                <li><i class="fa fa-bars fa-2x fa-lg" style="color:#FFFFFF;"></i>
+                    <ul>
+                        <li><a href="../../index.html">Inicio</a></li>
+                        <li><a href="../../Static/templates/register.html">Registrarse</a></li>
+                        <li><a href="../../Static/templates/Contacto.html">Contacto</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <div id="form" class="container">
+        <h1>Formulario de Carga</h1>
+        <form action="#" id="form-producto">
+            <div class="form-group">
+                <label for="tipo">Tipo:</label>
+                <input type="text" id="tipo" name="tipo" required>
+            </div>
+            <div class="form-group">
+                <label for="modelo">Modelo:</label>
+                <input type="text" id="modelo" name="modelo" required>
+            </div>
+            <div class="form-group">
+                <label for="color">Color:</label>
+                <input type="text" id="color" name="color" required>
+            </div>
+            <div class="form-group">
+                <label for="talle">Talle:</label>
+                <select id="talle" name="talle" required>
+                    <option value="" disabled selected>Seleccione un talle</option>
+                    <option value="XS">XS</option>
+                    <option value="S">S</option>
+                    <option value="M">M</option>
+                    <option value="L">L</option>
+                    <option value="XL">XL</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="precio">Precio:</label>
+                <input type="number" id="precio" name="precio" min="1" required>
+            </div>
+                 
+            <input type="hidden"  name="id" id="id-producto">
+            <button class="btn-save"  type="button" id="btn-save-producto"><i class="fas fa-save"></i>  Guardar Cambios</button>
+        </form>
+           
+
+    </div>
+
+    <div id="list" class="container">
+       <h3 class="subtitle">Inventario</h3>
+        <table id="list-table-productos" class="table">
+            <thead>
+                <tr>
+                    <th>Tipo</th>
+                    <th>Modelo</th>
+                    <th>Color</th>
+                    <th>Talle</th>
+                    <th>Precio</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody id="tbody-table-productos">    
+            </tbody>
+        </table>
+    </div>
+
+    <footer id="footer">
+        <ul>
+            <li class="Opciones-footer"><a href="">Términos y condiciones</a></li>
+            <li class="Opciones-footer"><a href="">Preguntas frecuentes</a></li>
+            <li class="Opciones-footer"><a href="">Ayuda</a></li>
+            <li class="Opciones-footer"><a href="./Static/templates/Inventario.html">Inventario</a></li>
+        </ul>
+   </footer>
+
+   <script src="../js/inventario.js"></script>
+
+</body>
+</html>
