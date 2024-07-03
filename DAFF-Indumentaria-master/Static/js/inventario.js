@@ -94,6 +94,12 @@ async function saveProducto(){
   
   const formProducto = document.querySelector('#form-producto');
   formProducto.reset();
+  document.getElementById('tipo').value = '';
+  document.getElementById('modelo').value = '';
+  document.getElementById('color').value = '';
+  document.getElementById('talle').selectedIndex = 0; // Seleccionar la opción por defecto
+  document.getElementById('precio').value = '';
+  document.getElementById('id-producto').value = ''; // Resetear el campo oculto
   Swal.fire({
     title: 'Exito!',
     text: result.message,
